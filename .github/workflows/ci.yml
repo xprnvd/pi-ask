@@ -66,7 +66,7 @@ jobs:
       - run: npm install --no-audit --no-fund
       - name: Verify the trusted publisher
         env:
-          PKG: "@xprnvd/pi-permission-system"
+          PKG: "@xprnvd/pi-ask"
         run: |
           # The registry's OIDC exchange is what the trusted publisher
           # authorizes. Asking for the exchange token proves that npm still
